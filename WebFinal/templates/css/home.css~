@@ -1,0 +1,42 @@
+body {
+
+	
+	font-family: sans-serif;
+	color: black;
+	background-image: url(init_ppal.png);
+}
+
+p{
+	color:black;font-size:medium;
+}
+
+button{
+	size:medium;
+}
+
+#pie {
+    
+    width: 1200px;
+    height: 200px;
+}
+
+
+#welcome {
+    
+    width: 1000px;
+    height: 200px;
+}
+
+#banderas {
+    
+    width: 70px;
+    height: 40px;
+}
+
+
+#content-menu{
+    
+}
+
+
+

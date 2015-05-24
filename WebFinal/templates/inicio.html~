@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="es">
+<!--      
+<head> 
+     <meta charset="UTF-8" />
+     <title>the app</title>
+    <link href="css/index.css" rel="stylesheet">-->
+</head>
+     
+    <div>
+        <img id = "banner" src="http://41.media.tumblr.com/b1fd8b93d34f2039696f01aeb13262cc/tumblr_nmw0s585SO1rz3mn9o1_400.jpg" />
+        
+    </div>
+
+    {% block content %}
+
+    {% if form.errors %}
+        <p class="error">Lo sentimos, ese no es un nombre de usuario o password validos</p>
+    {% endif %}
+
+    <form action="/accounts/auth/" method="post">{% csrf_token %}
+        <label for="username">User name:</label>
+        <input type="text" name="username" value="" id="username">
+        <label for ="password">Password:</label>
+        <input type="password" name="password" value="" id="password">
+    
+        <input type="submit" value="login" />
+    </form>
+
+    {% endblock %}
+
+    <div> 
+        <p ALIGN=left><h4>{{user}}</h4><a href="/logout"></h3>salir</a></h3></p>
+    </div>
+    
+    <body background="images/fondo2.jpg" >   
+          <div id = "content-menu">
+             <nav> 
+               <ul class = "menu">
+                  <li><a href="/todas">Todas</a></li>
+                  <li><a href="/ayuda">Ayuda</a></li>                
+              </ul>
+            </nav> 
+        	</div>
+      
+          <br><br>
+          
+          <div align = right>
+                <p>
+                  <h2>USUARIOS REGISTRADOS</h2>
+                </p>
+           
+            </div> <br>
+         
+          <div align = center>
+          	  		<font color=blue size=6>Actividades interesantes en Madrid</font>
+          </div><br><br>   
+           
+           <div align="center">
+                   
+                       {{respuesta|safe}}
+                  
+            </div>
+             <br> <br>
+              
+
+            <hr>  
+          <div id="pie"  >
+                 <p align = center> 
+                    Estoy en situasion de la ostia. Este sitio tiene copyright de Nacho Manrique
+                  </p>   
+           </div>         
+    </body>
+
+    </hmtl>
+
+
+   

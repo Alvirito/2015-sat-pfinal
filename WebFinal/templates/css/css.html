@@ -1,0 +1,569 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, strong, ul, li, article, footer, header, nav, section
+{
+    margin: 5;
+    padding: 0;
+    border: 0;
+    font-size: 50%;
+    font: 19px/1.231 sans-serif;
+    vertical-align: baseline
+    
+}
+
+
+
+body 
+{ 
+    font:13px/1.231 sans-serif; *font-size:medium
+}
+
+html 
+{ 
+    background:#3b3b3b; 
+    overflow-y: scroll
+}
+
+a, a:hover, a:active 
+{ 
+    outline: none
+}
+
+ul
+{ 
+    margin-left: 2em
+}
+
+nav ul, nav li 
+{ 
+    margin: 0; 
+    list-style:none; 
+    list-style-image: none
+}
+
+strong
+{ 
+    font-weight: 700
+}
+
+a:link 
+{ 
+    -webkit-tap-highlight-color: #a7dbd8
+}
+
+body
+{
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:400;
+    font-style: normal; 
+    font-size:{{tamanio_letra}}px; 
+    line-height:21px; 
+    color:{{color_letra}};
+    text-shadow:#fff 0 1px 0;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+    font-family:Rockwell, 'GeoSlb712MdBTMedium',"Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+
+}
+
+a, a:active, a:visited 
+{ 
+    color: #3299bb; 
+    text-decoration:none
+}
+
+a:hover 
+{ 
+    color: #424242; 
+    text-decoration:underline
+}
+
+/* ::: Contenido :::  */
+
+.cuerpo 
+{
+    background:none;
+    display:block;
+    margin:0 auto; 
+    clear:both; 
+    padding:0 20px;
+}
+
+.fila 
+{
+    width: 100%; 
+    max-width: 1140px; 
+    min-width: 755px; 
+    margin: 0 auto; 
+    overflow: hidden
+
+}
+
+.primera_columna, .segunda_columna
+{
+    margin-right: 3.8%; 
+    float: left; 
+    min-height: 1px;
+}
+
+.fila .primera_columna 
+{
+    width: 48%
+}
+
+.fila .segunda_columna 
+{
+    width: 22.05%
+}
+
+.ultima_columna 
+{
+    margin-right: 0
+}
+
+.right 
+{
+    float:right
+}
+
+.left 
+{
+    float:left
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.centrado 
+{
+    margin:0 auto 50px; 
+    position:relative
+}
+
+p 
+{
+    margin:0 0 30px;
+}
+
+h2 
+{
+    font-size:21px;
+    font-weight:700; 
+    color:#330000; 
+    margin:0 0 30px;
+}
+
+.centrado h3 
+{
+    margin:0 0 10px;
+}
+
+/* ::: Principal :::  */
+body 
+{
+    background:{{color_fondo}}; 
+    height:auto
+    font-size:50px
+    
+}
+
+header.principal 
+{
+    background:blue;
+    width:100%; 
+    height:100px;
+    border:thin solid #fff; 
+    border-width:0 0 1px;
+    margin:0;
+    padding:0; 
+    z-index:200;
+}
+
+a.logo_principal 
+{
+    width:252px;
+    height:42px;
+    float:left;
+    background:transparent url(../imagenes/logo.png) no-repeat 0 0;
+    cursor:pointer;border:thin solid #424242; 
+    border-width:0  1px 0 0;
+    text-indent:-9999px;
+    line-height:0;font-size:0;
+    text-decoration:none;
+    margin:30px 0 0; 
+    padding:0 30px 0 0;
+}
+
+nav.navegacion_principal 
+{
+    height:42px;
+    float:left;
+    font-family:Rockwell, 'GeoSlb712MdBTMedium',"Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size:30px;
+    color:#3b3b3b;
+    text-shadow:#fff 0 1px 0;
+    line-height:42px;
+    font-weight:400; 
+    border:thin solid #e9e9e9; 
+    border-width:0 0 0 1px; 
+    margin:30px 0 0;
+}
+
+nav.right 
+{
+    float:left; 
+    border:none;
+}
+
+
+nav.navegacion_principal ul li 
+{
+    clear:right;
+    float:left;
+    margin:0 0 0 30px;
+    color:black;
+}
+
+nav.right ul li 
+{
+    clear:right;
+    float:left;
+    margin:0 0 0 10px;
+}
+
+nav.navegacion_principal ul li a 
+{
+    text-decoration:none;
+    color:white;
+}
+
+nav.navegacion_principal ul li a:hover 
+{
+    color:#bcbcbc;
+    text-decoration:none
+}
+
+#imagen_principal
+{
+    height:800px;
+    background:white;
+    width:100%;
+    position:relative;
+    float:right;
+    z-index:10;
+    border:thin solid #0f0f0f;
+    border-width:1px 1px 1px;
+}
+
+.manchas 
+{
+    background:url(../imagenes/manchas.png) center no-repeat;
+    width:100%;
+    height:450px;
+    z-index:10;
+}
+
+.triangulos
+{
+    background:url(../imagenes/triangulos.png) center no-repeat;
+    width:100%;
+    height:450px;
+    z-index:20;
+}
+
+.ciudad
+{
+    background:url(../imagenes/ciudad.png) center bottom no-repeat;
+    width:100%;
+    height:375px;
+    z-index:20;
+    padding:75px 0 0;
+}
+
+#imagen_principal h4
+{
+    font-size:30px;
+    color:#FFFFCC;
+    font-family:"Rockwell Extra Bold", "StaffordSerialHeavyRegular", Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-weight:900;
+    line-height:60px;
+    text-shadow:0 -1px 0 #fff, 0 2px 2px rgba(0,0,0,1)
+}
+
+a.boton
+{
+    width:285px;
+    height:68px;
+    background:url(../imagenes/botones.png) 0 0 no-repeat;
+    overflow:hidden;
+    float:left;
+    text-indent:-9999px; 
+    outline:none;margin:50px 0 0;
+}
+
+a.boton:hover
+{
+    background:url(../imagenes/botones_hover.png) 0 -78px no-repeat;
+}
+
+.introduccion 
+{
+    width:100%;
+    height:140px;
+    float:left;
+    background:url(../imagenes/tramado_negro.png) 0 0 repeat-x;
+    border:none;
+    padding:40px 0 0; 
+    margin:0 0 50px;
+}
+
+.introduccion p
+{
+    color:#deeced;
+    text-align:center;
+    font-family:Rockwell, 'GeoSlb712MdBTMedium', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size:33px;
+    text-shadow:#000 0 1px 0;
+    font-weight:lighter;
+    letter-spacing:-0.015em;
+    line-height:51px;
+    margin:0;
+    padding:0;
+}
+
+.introduccion p:first-line
+{
+    font-size:41px;
+    letter-spacing:-0.02em
+}
+
+.introduccion p strong
+{
+    color:#e0e4cc;
+    font-weight:700;
+}
+
+.boton_trabajos 
+{
+    width:133px;
+    height:34px;
+    background:url(../imagenes/trabajos.png) no-repeat;
+    font-size:0;
+    text-decoration:none;
+    float:right;
+    cursor:pointer;
+    border:none;
+    text-indent:-9999px;
+    line-height:0;
+    margin:10px 0 0; 
+    right:50px; 
+    outline:none; 
+    position:relative;
+}
+
+/* ::: Inicio ::: */
+.tecnologias_utilizadas h2 
+{
+    text-align:center; 
+    position:absolute; 
+    top:-12px; 
+    left:41%; 
+    z-index:999; 
+    font-size:24px; 
+    color:#bcbcbc; 
+    background:#f4f4f4; 
+    padding:0 2%;
+}
+
+.tecnologias_utilizadas 
+{
+    background:url(imagenes/tramado_inferior.png) 0 0 repeat-x; 
+    padding:50px 0 0; 
+    position:relative; 
+    z-index:0; 
+    overflow:visible;
+}
+
+.tecnologias_utilizadas ul
+{
+    list-style:none; 
+    margin:0 0 50px; 
+    padding:0; 
+    float:left; 
+    clear:both; 
+    width:100%;
+}
+
+.tecnologias_utilizadas ul li.segunda_columna 
+{
+    border:none; 
+    padding:0; 
+    overflow:hidden; 
+    background:none; 
+    display:block;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px
+}
+
+.tecnologias_utilizadas ul li.segunda_columna a 
+{
+    padding:0; 
+    margin:0;
+    float:left;
+}
+
+.tecnologias_utilizadas ul li.segunda_columna img 
+{
+    width:100%; 
+    margin:0; 
+    padding:0; 
+    border: none; 
+    text-decoration:none; 
+    float:left; 
+    outline:none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.tecnologias_utilizadas ul li.ultima_columna 
+{
+    margin:0; 
+    padding:0;
+}
+
+.leer_mas 
+{
+    color:#d7390d; 
+    font-size:11px; 
+    clear:both; 
+    font-weight:700; 
+    text-decoration:none; 
+    text-transform:uppercase;
+}
+
+ul.sabemos 
+{
+    line-height:25px; 
+    list-style: inside; 
+    margin:0;
+}
+
+
+
+/* ::: Footer ::: */
+footer
+{
+    background:#424242;
+    width:100%;
+    clear:both;
+    display:block;
+    text-shadow:none;
+    color:#bcbcbc;
+    margin:0 auto;
+    padding:50px 0 0;
+}
+
+a.logo_inferior 
+{
+    width:154px;
+    height:30px;
+    float:right; 
+    background:transparent url(../imagenes/logo_footer.png) no-repeat 0 0; 
+    cursor:pointer;
+    border:none;
+    text-indent:-9999px;
+    line-height:0;
+    font-size:0;
+    text-decoration:none;
+    margin:0 0 20px;
+}
+
+a.logo_inferior:hover 
+{
+    text-decoration:none;
+}
+
+.direccion 
+{
+    clear:both;
+    line-height:18px; 
+    font-size:13px; 
+    text-align:right; 
+    letter-spacing:-.01em;
+}
+
+.calle, .localidad 
+{
+    clear:both;
+}
+
+.tel 
+{ 
+    text-align:right;
+    font-size:21px;
+    line-height:30px;
+    color:#bcbcbc; 
+    text-decoration:none; 
+    font-weight:500
+}
+
+.conectar 
+{
+    padding:0; 
+    float:left; 
+    margin:40px 0 0; 
+    clear:none;
+}
+
+.conectar a.social 
+{
+    width:55px;
+    height:55px;
+    float:left;
+    font-size:0;
+    text-decoration:none;
+    text-indent:-9999px;
+    margin:0 10px 0 0; 
+    outline:none;
+    display:block; 
+    position:relative;
+    padding:0;
+}
+
+.conectar a:hover 
+{ 
+    background-color: transparent; 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0;
+}
+
+.conectar img 
+{
+    width:100%; 
+    height: auto; 
+    display:block; 
+}
+
+.conectar img.rollover 
+{ 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    opacity:0;
+}
+
+.conectar a:hover img.rollover 
+{
+    opacity:1;
+}
+
+.conectar a:hover img.rollout 
+{
+    opacity:0;
+}

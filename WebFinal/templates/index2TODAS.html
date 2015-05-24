@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style type="text/css" rel="stylesheet">
+ {% include 'style.css' %}
+</style>
+<head>
+<title>P.Actividades</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss-articles/" />
+</head>
+<body style="background:{{fondo|safe}};color:{{letra|safe}};">
+
+<div id="wrap">
+
+<div id="header">
+<h1><a href="#">Actividades de Ocio Madrid</a>
+<img src="http://www.madrid.org/cs/StaticFiles/ComunidadMadrid/img/logo_cm.gif" alt="Example pic" style="" />
+</h1>
+<h2>La Suma de Todos</h2>
+</div>
+
+<div id="menu">
+<ul>
+<li><a href="/">INICIO</a></li>
+<li><a href="/ayuda/">AYUDA</a></li>
+<li><a href="/login/">LOGIN</a></li>
+<li><a href="/update/">ACTUALIZAR</a></li>
+</ul>
+</div>
+
+<div id="content">
+
+<div class="left">
+<h2><a href="#">Actividades</a></h2>
+actualizadas a fecha {{fecha|safe}}<br>
+{{init|safe}}
+</div>
+
+
+<div style="clear:both;"> </div>
+
+</div>
+
+<div id="footer">
+CopyRight Por Alvaro Martinez</a>, Thanks to Website Design</a>
+</div>
+
+</div>
+</body>
+</html>
